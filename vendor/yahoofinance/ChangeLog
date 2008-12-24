@@ -1,0 +1,46 @@
+2007-09-06  Nicholas Rahn  <nick@transparentech.com>
+	* RELEASE 1.2.2
+	* lib/yahoofinance.rb: Change host for live quote data CSV download to download.finance.yahoo.com since old host doesn't work anymore; Add basic proxy support.
+	* Rakefile: version update.
+2007-02-14  Nicholas Rahn  <nick@transparentech.com>
+	* RELEASE 1.2.1
+	* lib/yahoofinance.rb: Change historical data parsing due to Yahoo! Finance format change.  Don't catch exceptions in YahooFinance.get.
+	* Rakefile: version update.
+	
+2006-11-12  Nicholas Rahn  <nick@transparentech.com>
+	* lib/yahoofinance.rb: Improve (again) the exception handling for timeouts. Catch an 'Exception' rather than default which seems to miss the Timeout::Error.
+	
+2006-08-24  Nicholas Rahn  <nick@transparentech.com>
+	* lib/yahoofinance.rb: add valid?() method.
+	
+2006-08-01  Nicholas Rahn  <nick@transparentech.com>
+	* RELEASE 1.2.0
+	* lib/yahoofinance.rb: Internal cleanups and optimizations so we don't return or create big arrays if not necessary in the historical quote API.
+	
+2006-07-31  Nicholas Rahn  <nick@transparentech.com>
+	* Reorganize directory layout for gem.
+	* Rakefile: New rakefile for building a gem.
+	* lib/yahoofinance.rb: Add command line usage for historical quotes.
+	
+2006-05-04  Nicholas Rahn  <nick@transparentech.com>
+	* yahoofinance.rb: Re-organize the method names for historical quotes. Upgrade the downloading of historical data so that "international" market data that are available only in 200 data point chunks are completely downloaded (in multiple chunks).
+	
+2006-03-13  Nicholas Rahn  <nick@transparentech.com>
+	* yahoofinance.rb: Play around with timeouts in an attempt to find why requests will sometimes hang.  Added a bit of error checking to get method.  Probably can remove extra stuff later.
+	
+2006-01-01  Nicholas Rahn  <nick@transparentech.com>
+	* yahoofinance.rb: Start work on historical quote data retrieval.  Mostly for use in Grism (www.grism.org).
+	
+2005-09-05  Nicholas Rahn  <nick@transparentech.com>
+
+	* yahoofinance.rb: add proper value conversion methods to some
+	extended quote variables.
+
+2005-08-31  Nicholas Rahn  <nick@transparentech.com>
+
+	* yahoofinance.rb: Allow passing arrays of symbols as well as
+	comma delimited strings.
+
+2005-08-30  Nicholas Rahn  <nick@transparentech.com>
+
+	* Release 1.0.0

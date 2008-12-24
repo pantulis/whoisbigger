@@ -1,0 +1,14 @@
+                     YahooFinance ruby module
+
+Homepage: http://www.transparentech.com/projects/yahoofinance
+
+Ruby module for getting stock quote information from the 
+finance.yahoo.com website.
+
+This module can be "required" and used as a library. Or it can be 
+run from the command-line as a script.
+
+
+Please see the homepage for more details.
+
+Please send any comments or bug reports to "nick lives-here transparentech pixel-grouping com".

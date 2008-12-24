@@ -1,8 +1,9 @@
-require "rubygems"
-require "sinatra"
-require "yahoofinance"
-require "bigdecimal"
-require "bigdecimal/util"
+require 'rubygems'
+require 'vendor/sinatra/lib/sinatra.rb'
+require 'vendor/yahoofinance/lib/yahoofinance'
+
+require 'bigdecimal'
+require 'bigdecimal/util'
 
 helpers do
   def to_dollars(cap)
