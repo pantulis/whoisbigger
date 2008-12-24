@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name / Original design: Andreas Viklund - http://andreasviklund.com/" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/andreas05.css" />
+	<title>andreas05 v2.5</title>
+</head>
+
+<body>
+<div id="title"><h1>WHO'S BIGGER?</h1></div>
+<div id="container">
+	
+	<div id="sidebar">
+		<div id="compare_form">
+		<form action="/compare" method="get">
+			<ul>
+				<li>
+					<label for="stock1">Stock quote</label>
+					<input type="text" name="stock1" id="stock1">
+				</li>
+				<li>
+					<label for="stock2">Stock quote</label>
+					<input type="text" name="stock2" id="stock2">
+				</li>
+			</ul>
+			<input type="submit" value="Who is bigger?">
+		</form>
+		</div>
+		
+		<div id="sample_queries">
+			<p><strong>Sample queries</strong></p>
+			<p>
+				<a href="/compare?stock1=GOOG&stock2=AAPL">Google vs Apple</a> |
+				<a href="/compare?stock1=MSFT&stock2=ORCL">Microsoft vs Oracle</a> |
+				<a href="/compare?stock1=F&stock2=GM">Ford vs GM</a>
+			</p>
+		</div>
+	</div>
+	<div id="main">
+		<%= yield %>
+	</div>
+
+	<div id="footer"></div>
+</div>
+</body>
+</html>
