@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'vendor/sinatra/lib/sinatra.rb'
-require 'vendor/yahoofinance/lib/yahoofinance'
+require 'vendor/yahoofinance/lib/yahoofinance.rb'
 
 require 'bigdecimal'
 require 'bigdecimal/util'
