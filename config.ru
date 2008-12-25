@@ -4,6 +4,7 @@ require 'vendor/sinatra/lib/sinatra.rb'
 Sinatra::Application.default_options.merge!(
   :run => false,
   :env => :production,
+  :views => '/home/pantulis/whoisbigger.sobrerailes.com/current/views',
   :raise_errors => true
 )
 
